@@ -1,0 +1,1 @@
+https://its-my-life.herokuapp.com/admin/login/?next=/admin/
