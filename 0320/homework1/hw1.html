@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw1</title>
+
+    <script>
+        function add() {
+            var p1, p2;
+            p1 = parseFloat(document.getElementById("num1").value);
+            p2 = parseFloat(document.getElementById("num2").value);
+            (document.getElementById("ans").innerHTML) = "Ans:" + parseFloat(p1 + p2);
+        }
+        function sub() {
+            var p1, p2;
+            p1 = parseFloat(document.getElementById("num1").value);
+            p2 = parseFloat(document.getElementById("num2").value);
+            (document.getElementById("ans").innerHTML) = "Ans:" + parseFloat(p1 - p2);
+        }
+        function mul() {
+            var p1, p2;
+            p1 = parseFloat(document.getElementById("num1").value);
+            p2 = parseFloat(document.getElementById("num2").value);
+            (document.getElementById("ans").innerHTML) = "Ans:" + parseFloat(p1 * p2);
+        }
+        function div() {
+            var p1, p2;
+            p1 = parseFloat(document.getElementById("num1").value);
+            p2 = parseFloat(document.getElementById("num2").value);
+            (document.getElementById("ans").innerHTML) = "Ans:" + parseFloat(p1 / p2);
+        }
+        function clean() {
+            var p1, p2;
+            p1 = parseFloat(document.getElementById("num1").value);
+            p2 = parseFloat(document.getElementById("num2").value);
+            (document.getElementById("ans").innerHTML) = "Ans:";
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="num1"><br><br>
+    <div onclick="add()"
+        style="display: inline-block; padding: 10px 40px; background-color: red; color: white; font-size: 1.2em; ">
+        +</div>
+    <div onclick="sub()"
+        style="display: inline-block; padding: 10px 40px; background-color: green; color: white; font-size: 1.2em; ">
+        -</div>
+    <div onclick="mul()"
+        style="display: inline-block; padding: 10px 40px; background-color: rgb(230, 245, 19); color: white; font-size: 1.2em; ">
+        *</div>
+    <div onclick="div()"
+        style="display: inline-block; padding: 10px 40px; background-color: rgb(41, 26, 173); color: white; font-size: 1.2em; ">
+        /</div>
+    <div onclick="clean()"
+        style="display: inline-block; padding: 10px 40px; background-color: rgb(163, 27, 204); color: white; font-size: 1.2em; ">
+        C</div>
+    <br><br>
+    <input type="text" id="num2"><br>
+    <p id="ans">Ans:</p>
+
+</body>
+
+</html>

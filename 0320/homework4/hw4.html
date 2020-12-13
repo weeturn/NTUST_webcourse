@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw4</title>
+    
+    <script>
+        function myFunction() {
+                let canvas = document.getElementById("canvas");
+                let context = canvas.getContext("2d");
+                context.beginPath();
+                context.rect(20, 20, 200, 200);
+                context.strokeStyle = "#FF0000";
+                context.stroke();
+
+                let y = 20
+                let ori = true;
+                setInterval(function() {
+                    context.beginPath();
+                    context.clearRect(0, 0, 350, 350);
+                    context.beginPath();
+                    if(y > 210){
+                        ori = false;
+                    }
+                    else if(y < 20){
+                        ori = true;
+                    }
+                    
+                    if(ori)
+                        context.rect(y++,y++,10,10);
+                    else
+                        context.rect(y--,y--,10,10);
+                    context.stroke();
+                    context.beginPath();
+                    context.rect(20, 20, 200, 200);
+                    context.stroke();
+                }, 50);
+            }
+
+    </script>
+</head>
+
+<body>
+    <button onclick="myFunction()">Try it</button>
+    <canvas id="canvas" width="350" height="350"></canvas>
+    
+    
+
+</body>
+
+</html>

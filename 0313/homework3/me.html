@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Weeturn</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF0F5;
+}
+
+/* Style the header */
+header {
+  background-color: #FFE4E1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #FFE4E1;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: lightpink;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: pink;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: lightpink;
+}
+
+.active {
+  background-color: hotpink;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="Introduction.html">Home</a></li>
+  <li><a class="active" href="me.html">Me</a></li>
+  <li><a href="picture.html">Picture</a></li>
+  <li><a href="school.html">School</a></li>
+</ul>
+    
+<header>
+  <h2>Hello!</h2>
+</header>
+
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;text-align: center" >
+    
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<p>我是黃哲韋<br>歡迎來到我的網頁!</p>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+</div>
+    
+<section>
+  <nav>
+    <ul1>
+      <img src="cat.jpg" alt="me" style="width:180px;height:128px;">
+    </ul1>
+  </nav>
+  
+  <article>
+    <h1>我不是一隻貓咪</h1>
+    <p>我就是我，我不是一隻貓咪，也不是隔壁老王，我誰都不是，我就是我</p><br>
+      <p>你以為我是貓控嗎? 不，我不是，也許你是?</p>
+  </article>
+</section>
+
+<footer>
+  <p>貓咪的腳掌好可愛</p>
+</footer>
+
+</body>
+</html>

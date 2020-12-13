@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Weeturn</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF0F5;
+}
+
+/* Style the header */
+header {
+  background-color: #FFE4E1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: 	#FFE4E1;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: lightpink;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+<style>
+div.gallery {
+  border: 1px solid white;
+}
+
+div.gallery:hover {
+  border: 1px solid white;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: pink;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: lightpink;
+}
+
+.active {
+  background-color: hotpink;
+}
+</style>
+</head>
+    
+<body>
+<ul>
+  <li><a class="active" href="Introduction.html">Home</a></li>
+  <li><a href="me.html">Me</a></li>
+  <li><a href="picture.html">Picture</a></li>
+  <li><a href="school.html">School</a></li>
+</ul>
+    
+<header>
+  <h2>Meow</h2>
+</header>
+<div class="responsive">
+  <div class="gallery">
+    <img src="cat.jpg" alt="cat1" width="600" height="400">
+    <div class="desc" >一隻貓咪</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <img src="cat2.jpg" alt="cat2" width="600" height="400">
+    <div class="desc">兩隻貓咪</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <img src="cat3.jpg" alt="cat3" width="600" height="400">
+    <div class="desc">三隻貓咪</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <img src="cat4.jpg" alt="cat4" width="600" height="400">
+    <div class="desc">四隻貓咪</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+    
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat"></i>
+  <p>我的貓咪網頁可以跟著伸縮喔!</p>
+</div>
+<section>
+  <nav>
+    <ul1>
+      <img src="cat.jpg" alt="me" style="width:180px;height:128px;">
+    </ul1>
+  </nav>
+  
+  <article>
+    <h1>這是一隻貓咪</h1>
+    <p>貓（學名：Felis silvestris catus），通常指家貓，為小型貓科動物，是為野貓（又稱斑貓；Felis silvestris）中的亞種[1]，此外也有其他未經過《國際動物命名法規》認可的命名，例如Felis catus。根據遺傳學及考古學分析，人類馴養貓的紀錄可追溯至10,000年前的肥沃月灣地區，古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉榖物。</p>
+    <br>
+      <p>歡迎瀏覽我的其他網頁哦~</p>
+  </article>
+</section>
+
+<footer>
+  <p>貓咪的腳掌好可愛</p>
+</footer>
+
+</body>
+</html>

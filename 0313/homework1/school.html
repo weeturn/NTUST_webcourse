@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: pink;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: lightpink;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>About me</h2>
+<p>Hello, I'm Sam.</p>
+
+<header>
+  <h2>Hey</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="Introduction.html">自我介紹</a></li>
+      <li><a href="school.html">學校</a></li>
+      <li><a href="picture.html">照片</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>我的學校</h1>
+    <a href="https://www.ntust.edu.tw/home.php">This is 台科大</a>
+    <img src="http://www.ntust.edu.tw/ezfiles/0/1000/randimg/ad_1315_7676011_21120.jpg">
+  </article>
+</section>
+
+<footer>
+  <p>聞我的foot</p>
+</footer>
+
+</body>
+</html>
